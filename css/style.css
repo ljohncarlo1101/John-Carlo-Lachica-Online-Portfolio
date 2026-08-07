@@ -37,6 +37,8 @@ body {
 
   width: 100%;
 
+  max-width: 100%;
+
   z-index: 999;
 
   background: white;
@@ -164,6 +166,18 @@ nav a {
   color: #333;
 
   font-weight: bold;
+
+  padding: 8px 12px;
+
+  border-radius: 6px;
+
+  transition: 0.3s ease;
+}
+
+nav a.active {
+  color: #0d6efd;
+
+  border: 2px solid #0d6efd;
 }
 
 nav a:hover {
@@ -185,6 +199,9 @@ nav a:hover {
   cursor: pointer;
 }
 
+/* ========================= */
+/* RESPONSIVE HEADER AND NAVBAR */
+/* ========================= */
 @media (max-width: 900px) {
   .menu-toggle {
     display: block;
@@ -214,6 +231,62 @@ nav a:hover {
 
   nav ul.active {
     display: flex;
+  }
+
+  /* Mobile Shrinking Header */
+  .header-wrapper.shrink #hero {
+    padding: 20px;
+  }
+
+  .header-wrapper.shrink .profile-image {
+    width: 70px;
+
+    height: 70px;
+  }
+
+  .header-wrapper.shrink .hero-container {
+    flex-direction: row;
+
+    gap: 15px;
+  }
+
+  .header-wrapper.shrink .hero-text h1 {
+    font-size: 22px;
+  }
+
+  .header-wrapper.shrink .hero-contact {
+    display: none;
+  }
+
+  /* Mobile Hero Adjustment */
+  .hero-container {
+    flex-direction: column;
+
+    text-align: center;
+
+    gap: 25px;
+  }
+
+  .profile-image {
+    width: 140px;
+
+    height: 140px;
+  }
+
+  .hero-text {
+    width: 100%;
+  }
+
+  .hero-text h1 {
+    font-size: 32px;
+  }
+
+  .hero-contact {
+    margin-top: 20px;
+  }
+
+  .hero-contact h3 {
+    font-size: 16px;
   }
 }
 
@@ -260,7 +333,7 @@ section {
 
   padding: 100px 20px;
 
-  scroll-margin-top: 170px;
+  scroll-margin-top: 100px;
 }
 
 section h2 {
