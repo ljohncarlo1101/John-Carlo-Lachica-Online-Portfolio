@@ -641,6 +641,136 @@ section h2 {
 }
 
 /* ========================= */
+/* CERTIFICATES SECTION */
+/* ========================= */
+
+.certificates-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+/* CERTIFICATE CARD */
+
+.certificate-card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+
+  border: 1px solid #e5e7eb;
+
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.certificate-card:hover {
+  transform: translateY(-5px);
+
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* CERTIFICATE IMAGE */
+
+.certificate-image {
+  width: 100%;
+  background: #f8fafc;
+
+  padding: 20px;
+}
+
+.certificate-image img {
+  display: block;
+
+  width: 100%;
+  height: auto;
+
+  border-radius: 6px;
+}
+
+/* CERTIFICATE INFORMATION */
+
+.certificate-info {
+  padding: 25px;
+}
+
+.certificate-category {
+  display: inline-block;
+
+  font-size: 13px;
+  font-weight: bold;
+
+  color: #0d6efd;
+
+  letter-spacing: 1px;
+
+  margin-bottom: 8px;
+}
+
+.certificate-info h3 {
+  font-size: 21px;
+  line-height: 1.4;
+
+  color: #1f2937;
+
+  margin-bottom: 15px;
+}
+
+.certificate-platform,
+.certificate-instructor,
+.certificate-date {
+  font-size: 15px;
+  color: #555;
+
+  margin-bottom: 5px;
+}
+
+.certificate-date {
+  color: #777;
+  margin-top: 10px;
+}
+
+/* CERTIFICATE BUTTON */
+
+.certificate-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  width: fit-content;
+
+  margin: 15px auto 0;
+
+  padding: 9px 16px;
+
+  background: #0d6efd;
+  color: white;
+
+  border-radius: 6px;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  text-decoration: none;
+
+  transition:
+    background 0.3s ease,
+    transform 0.3s ease;
+}
+
+.certificate-button:hover {
+  background: #0b5ed7;
+  transform: translateY(-2px);
+}
+
+.certificate-button i {
+  font-size: 12px;
+}
+
+/* ========================= */
 /* FOOTER*/
 /* ========================= */
 footer {
@@ -840,5 +970,20 @@ section h2 {
 
   .project-role {
     font-size: 16px;
+  }
+
+  /* CERTIFICATES SECTION */
+
+  .certificates-container {
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+
+  .certificate-info {
+    padding: 25px;
+  }
+
+  .certificate-info h3 {
+    font-size: 20px;
   }
 }
