@@ -343,10 +343,167 @@ section h2 {
 }
 
 .featured-skill {
-    border-left: 5px solid #0d6efd;
-    box-shadow:
-        4px 4px 0 #b8d7ff,
-        0 4px 15px rgba(0, 0, 0, 0.08);
+  border-left: 5px solid black;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+/* ========================= */
+/* EXPERIENCE SECTION */
+/* ========================= */
+
+.experience-container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* EXPERIENCE CARD */
+
+.experience-card {
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+
+  border: 1px solid #e5e7eb;
+  border-left: 5px solid #0d6efd;
+
+  box-shadow:
+    4px 4px 0 #b8d7ff,
+    0 4px 15px rgba(0, 0, 0, 0.08);
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.experience-card:hover {
+  transform: translateY(-5px);
+
+  box-shadow:
+    6px 6px 0 #b8d7ff,
+    0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* PROJECT HEADER */
+
+.experience-label {
+  display: inline-block;
+
+  color: #0d6efd;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
+
+  margin-bottom: 10px;
+}
+
+.experience-header h3 {
+  font-size: 30px;
+  color: #1f2937;
+
+  margin-bottom: 8px;
+}
+
+.experience-title-row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.experience-title-row h3 {
+  font-size: 30px;
+  color: #1f2937;
+  margin: 0;
+}
+
+.experience-title-row h3 a {
+  color: #1f2937;
+  text-decoration: none;
+}
+
+.experience-title-row h3 a:hover {
+  color: #0d6efd;
+}
+
+.experience-title-row h3 a i {
+  font-size: 16px;
+  color: #0d6efd;
+  margin-left: 8px;
+  vertical-align: middle;
+}
+
+.experience-date {
+  font-size: 15px;
+  color: #777;
+  white-space: nowrap;
+}
+
+.experience-role {
+  font-size: 18px;
+  color: #555;
+  margin-top: 10px;
+  margin-bottom: 3px;
+}
+
+/* DIVIDER */
+
+.experience-overview,
+.experience-contributions,
+.experience-technologies {
+  margin-top: 30px;
+  padding-top: 25px;
+
+  border-top: 1px solid #e5e7eb;
+}
+
+/* SUBHEADINGS */
+
+.experience-card h4 {
+  font-size: 18px;
+  color: #1f2937;
+
+  margin-bottom: 12px;
+}
+
+/* PROJECT OVERVIEW */
+
+.experience-overview p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #555;
+}
+
+/* CONTRIBUTIONS */
+
+.experience-contributions ul {
+  padding-left: 20px;
+}
+
+.experience-contributions li {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #555;
+
+  margin-bottom: 10px;
+}
+
+/* TECHNOLOGY TAGS */
+
+.technology-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.technology-list span {
+  background: #f1f5f9;
+  color: #333;
+
+  padding: 8px 14px;
+
+  border-radius: 6px;
+
+  font-size: 14px;
 }
 
 /* ========================= */
@@ -493,5 +650,33 @@ section h2 {
 
   .skill-card h3 {
     font-size: 20px;
+  }
+
+  /* EXPERIENCE SECTION */
+
+  .experience-container {
+    width: 100%;
+  }
+
+  .experience-card {
+    padding: 25px;
+  }
+
+  .experience-title-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+
+  .experience-title-row h3 {
+    font-size: 24px;
+  }
+
+  .experience-date {
+    font-size: 14px;
+  }
+
+  .experience-role {
+    font-size: 16px;
   }
 }
