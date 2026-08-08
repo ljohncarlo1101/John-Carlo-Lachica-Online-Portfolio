@@ -507,6 +507,140 @@ section h2 {
 }
 
 /* ========================= */
+/* PROJECTS SECTION */
+/* ========================= */
+
+.projects-container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* PROJECT CARD */
+
+.project-card {
+  background: white;
+  padding: 35px;
+  border-radius: 12px;
+
+  border: 1px solid #e5e7eb;
+  border-left: 5px solid #0d6efd;
+
+  box-shadow:
+    4px 4px 0 #b8d7ff,
+    0 4px 15px rgba(0, 0, 0, 0.08);
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+
+  box-shadow:
+    6px 6px 0 #b8d7ff,
+    0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* PROJECT HEADER */
+
+.project-title-row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.project-title-row h3 {
+  font-size: 28px;
+  color: #1f2937;
+
+  margin: 0;
+}
+
+.project-title-row h3 span {
+  display: block;
+}
+
+.project-date {
+  font-size: 15px;
+  color: #777;
+
+  white-space: nowrap;
+}
+
+.project-role {
+  font-size: 17px;
+  color: #555;
+
+  margin-top: 8px;
+}
+
+/* PROJECT CONTENT */
+
+.project-overview,
+.project-contributions,
+.project-technologies {
+  margin-top: 30px;
+  padding-top: 25px;
+
+  border-top: 1px solid #e5e7eb;
+}
+
+/* SUBHEADINGS */
+
+.project-card h4 {
+  font-size: 18px;
+  color: #1f2937;
+
+  margin-bottom: 12px;
+}
+
+/* PROJECT OVERVIEW */
+
+.project-overview p {
+  font-size: 16px;
+  line-height: 1.7;
+
+  color: #555;
+}
+
+/* PROJECT CONTRIBUTIONS */
+
+.project-contributions ul {
+  padding-left: 20px;
+}
+
+.project-contributions li {
+  font-size: 16px;
+  line-height: 1.7;
+
+  color: #555;
+
+  margin-bottom: 10px;
+}
+
+/* TECHNOLOGIES */
+
+.project-tech-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.project-tech-list span {
+  background: #f1f5f9;
+
+  color: #333;
+
+  padding: 8px 14px;
+
+  border-radius: 6px;
+
+  font-size: 14px;
+}
+
+/* ========================= */
 /* FOOTER*/
 /* ========================= */
 footer {
@@ -677,6 +811,34 @@ section h2 {
   }
 
   .experience-role {
+    font-size: 16px;
+  }
+
+  /* PROJECTS SECTION */
+
+  .projects-container {
+    width: 100%;
+  }
+
+  .project-card {
+    padding: 25px;
+  }
+
+  .project-title-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+
+  .project-title-row h3 {
+    font-size: 24px;
+  }
+
+  .project-date {
+    font-size: 14px;
+  }
+
+  .project-role {
     font-size: 16px;
   }
 }
