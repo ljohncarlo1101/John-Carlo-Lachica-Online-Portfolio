@@ -99,7 +99,8 @@ body {
 }
 
 .hero-text h3 {
-  color: #0d6efd;
+  margin-top: 5px;
+  font-size: 18px;
 }
 
 .hero-contact {
@@ -766,6 +767,128 @@ section h2 {
 }
 
 /* ========================= */
+/* EDUCATION SECTION */
+/* ========================= */
+
+.education-container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* EDUCATION CARD */
+
+.education-card {
+  background: white;
+
+  padding: 35px;
+
+  border-radius: 12px;
+
+  border: 1px solid #e5e7eb;
+
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.education-card:hover {
+  transform: translateY(-5px);
+
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* EDUCATION BADGE */
+
+.education-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  padding: 6px 12px;
+
+  background: #f1f5f9;
+
+  color: black;
+
+  border-radius: 6px;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  letter-spacing: 0.5px;
+
+  margin-bottom: 18px;
+}
+
+.education-badge i {
+  font-size: 14px;
+}
+
+/* DEGREE */
+
+.education-card h3 {
+  font-size: 28px;
+
+  color: #1f2937;
+
+  margin-bottom: 12px;
+}
+
+/* INSTITUTION */
+
+.education-institution {
+  font-size: 19px;
+
+  font-weight: 600;
+
+  color: #333;
+
+  margin-bottom: 6px;
+}
+
+/* SCHOOL */
+
+.education-school {
+  font-size: 16px;
+
+  color: #555;
+
+  line-height: 1.6;
+
+  margin-bottom: 15px;
+}
+
+/* LOCATION */
+
+.education-location {
+  font-size: 15px;
+
+  color: #777;
+
+  margin-bottom: 8px;
+}
+
+.education-location i {
+  color: black;
+
+  margin-right: 6px;
+}
+
+/* DATE */
+
+.education-date {
+  font-size: 15px;
+
+  font-weight: 600;
+
+  color: #555;
+
+  margin-top: 15px;
+}
+
+/* ========================= */
 /* FOOTER*/
 /* ========================= */
 footer {
@@ -980,5 +1103,35 @@ section h2 {
 
   .certificate-info h3 {
     font-size: 20px;
+  }
+
+  /* EDUCATION SECTION */
+
+  .education-container {
+    width: 100%;
+  }
+
+  .education-card {
+    padding: 25px;
+  }
+
+  .education-card h3 {
+    font-size: 24px;
+  }
+
+  .education-institution {
+    font-size: 18px;
+  }
+
+  .education-school {
+    font-size: 15px;
+  }
+
+  .education-location {
+    font-size: 14px;
+  }
+
+  .education-date {
+    font-size: 14px;
   }
 }
